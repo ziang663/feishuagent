@@ -1,0 +1,29 @@
+{
+  "name": "inference-engine-release-bot",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Feishu bot that explains SGLang and vLLM releases, pull requests, and issues in plain Chinese.",
+  "engines": {
+    "node": ">=22.19.0"
+  },
+  "scripts": {
+    "dev": "tsx --env-file-if-exists=.env src/index.ts",
+    "ask": "tsx --env-file-if-exists=.env src/cli.ts",
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "start": "node --env-file-if-exists=.env dist/index.js",
+    "test": "vitest run",
+    "check": "npm run test && npm run typecheck && npm run build"
+  },
+  "dependencies": {
+    "@larksuiteoapi/node-sdk": "^1.56.1",
+    "openai": "^5.19.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.19.8",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.1.11"
+  }
+}
