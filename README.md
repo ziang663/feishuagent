@@ -2,6 +2,8 @@
 
 一个专门解释 SGLang 和 vLLM 版本、PR、Issue 的飞书机器人。
 
+项目的需求演进、关键设计决策、问题修复记录和后续 Roadmap 见 [开发迭代文档](./DEVELOPMENT_ITERATION.md)。
+
 在群里 @机器人并发送：
 
 ```text
